@@ -1,79 +1,70 @@
 <header id="header" class="d-flex align-items-center">
   <div class="container d-flex flex-column align-items-center">
-
+<br>
     <h1>Pandemie Proof</h1>
-    <h2>Kun jij de pandemie aan?</h2>
-    
-<br><br>
-    <div class="subscribe">
-      <h4>Vink de checklist af en check jezelf!</h4>
-      <span>Zoveel mensen gingen je voor: <b>0</b></span>
-      
-    </div>
+    <h2 style="color:#fff200">Kun jij de pandemie aan?</h2>
   </div>
 </header><!-- End #header -->
+<br><br>
+
+  <div class="container">
+<div class="section-title">
+  <button class="btn btn-lg btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Wat is deze?
+  </button>
+</div>
+
+
+<div class="collapse text-center" id="collapseExample">
+  <div class="card card-body"  style="background-color: royalblue;"><br>
+    <div class="row mt-2">
+      <div class="col-lg-4 col-md-6 icon-box" style="padding-left: 40px;padding-right: 40px;">
+        <h4 class="title" style="color:navy">Tegengeluid</h4>
+        <div class="icon" style="color:navy"><i class="fa fa-adjust fa-2x"></i></div><br>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut velit vel mauris ullamcorper tempus.</p><br>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box" style="padding-left: 40px;padding-right: 40px;">
+        <h4 class="title" style="color:navy">Tegengeluid</h4>
+        <div class="icon" style="color:navy"><i class="fa fa-adjust fa-2x"></i></div><br>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut velit vel mauris ullamcorper tempus.</p><br>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box" style="padding-left: 40px;padding-right: 40px;">
+        <h4 class="title" style="color:navy">Tegengeluid</h4>
+        <div class="icon" style="color:navy"><i class="fa fa-adjust fa-2x"></i></div><br>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut velit vel mauris ullamcorper tempus.</p><br>
+      </div>
+    </div><br></div>
+</div></div><br><br><br><br><br><br><br><br>
+<br>
+    <div class="subscribe text-center">
+      <h4>Vink de checklist af en check jezelf!</h4>
+      <span>Zoveel mensen gingen je voor: <b style="font-size: larger;">0</b></span>
+      
+    </div>
 
 <main id="main">
 
-  <!-- ======= About Us Section ======= -->
-  <section id="about" class="about">
-    <div class="container">
 
-      <div class="section-title">
-        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-          Waarom?
-        </button>
-      </div>
-
-
-      <div class="collapse" id="collapseExample">
-        <div class="card card-body"  style="background-color: royalblue;">
-          <div class="row mt-2">
-            <div class="col-lg-4 col-md-6 icon-box">
-              <h4 class="title"><a href="">Samen tegen<br>corona</a></h4>
-              <div class="icon"><i class="fa fa-adjust"></i></div><br>
-              <p class="description">Dit is een lastige tijd en we willen die graag zo goed mogelijk doorkomen...</p>
-            </div>
-            <div class="col-lg-4 col-md-6 icon-box">
-              <h4 class="title"><a href="">Gezond verstand<br>lijkt zoek</a></h4>
-              <div class="icon"><i class="fa fa-adjust"></i></div><br>
-              <p class="description">Maar dat is niet zo! Jammer genoeg zie je online genoeg schreeuwlelijkers die allemaal gelijk hebben. Mensen die niet hun mening willen opdringen reageren niet op alles en daardoor kan het lijken alsof</p>
-            </div>
-            <div class="col-lg-4 col-md-6 icon-box">
-              <h4 class="title"><a href="">Meer goed dan<br>kwaad</a></h4>
-              <div class="icon"><i class="fa fa-adjust"></i></div><br>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div></div>
-      </div>
-
-      
-
-     
-      
-
-    </div>
-  </section><!-- End About Us Section -->
-
-  <div class="container" style="padding-top: 30px;">
+  <div class="container" style="padding-top: 30px;-left:100px;max-width: ;" >
+    
     <div class="text-center">
-    <h1>Checklist</h1></div><br><br>
-
-        <div class="row justify-content-center" *ngFor="let check of checks" style="margin-top: 15px;">
-          
-        
-          <div class="col-4">
+    <h4 style="color:#fff200">Checklist</h4></div><br>
+    <div class="card" style="background-color: #0d2c72;border-radius: 75px;">
+      <div class="card-body" style="padding-bottom:100px;padding-top: 40px;">
+        <br><br>
+        <div class="row" *ngFor="let check of checks" style="margin-top: 25px;">
+          <div class="col-3">
             <input type="checkbox" class="pull-right" />
           </div>
-          <div class="col-8" style="margin-top: auto;margin-bottom: auto;">
-            <label>{{check}}</label>
+          <div class="col-8" style="margin-top: auto;margin-bottom: auto; font-size:large">
+            <p>{{check}}</p>
           </div>
           
           
-        </div>
-       
+        </div><br><br>
+      </div>
 
-    
+      </div>
   </div>
 
   <br><br><br><br><br><br><br><br><br><br>
@@ -86,7 +77,7 @@
   <div class="container">
     <div class="copyright">
 <!--       Copyright is zo 2020. Gemaakt door <a href="https://www.edease.nl" target="_blanc">Edease</a> met de beste bedoelingen.
- -->      Copyright is zo 2020. Gemaakt door iemand met de beste bedoelingen.
+ -->      Copyright is zo 2020.<br>Gemaakt door iemand met de beste bedoelingen.
 
     </div>
     <div class="credits">
